@@ -1,0 +1,11 @@
+Scheduling Type: Non-preemptive
+Scheduling Name: Найкоротший процес наступний
+Simulation Run Time: 5000
+Mean: 1100
+Standard Deviation: 510
+Process #	CPU Time	IO Blocking	CPU Completed	CPU Blocked
+0		1199 (ms)	10 (ms)		580 (ms)	58 times
+1		1199 (ms)	50 (ms)		1199 (ms)	23 times
+2		1590 (ms)	70 (ms)		1590 (ms)	22 times
+3		1590 (ms)	150 (ms)	1401 (ms)	9 times
+4		1590 (ms)	230 (ms)	230 (ms)	1 times
