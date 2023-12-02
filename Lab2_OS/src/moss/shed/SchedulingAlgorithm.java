@@ -1,7 +1,4 @@
-package moss.shed;// Run() is called from Scheduling.main() and is where
-// the scheduling algorithm written by the user resides.
-// User modification should occur within the Run() function.
-
+package moss.shed;
 import java.util.Vector;
 import java.io.*;
 
@@ -19,8 +16,6 @@ public class SchedulingAlgorithm {
     result.schedulingType = "Batch (Nonpreemptive)";
     result.schedulingName = "First-Come First-Served"; 
     try {
-      //BufferedWriter out = new BufferedWriter(new FileWriter(resultsFile));
-      //OutputStream out = new FileOutputStream(resultsFile);
       PrintStream out = new PrintStream(new FileOutputStream(resultsFile));
       sProcess process = (sProcess) processVector.elementAt(currentProcess);
       out.println("Process: " + currentProcess + " registered... (" + process.cputime + " " + process.ioblocking + " " + process.cpudone + " " + process.cpudone + ")");
@@ -63,7 +58,7 @@ public class SchedulingAlgorithm {
         comptime++;
       }
       out.close();
-    } catch (IOException e) { /* Handle exceptions */ }
+    } catch (IOException e) {}
     result.compuTime = comptime;
     return result;
   }
