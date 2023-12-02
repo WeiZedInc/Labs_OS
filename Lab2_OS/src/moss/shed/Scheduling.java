@@ -8,11 +8,8 @@ package moss.shed;// This file contains the main() function for the Scheduling
 // Created by Alexander Reeder, 2001 January 06
 
 import java.io.*;
-import java.util.*;
-import sProcess;
-import Common;
-import Results;
-import moss.shed.SchedulingAlgorithm;
+import java.util.StringTokenizer;
+import java.util.Vector;
 
 public class Scheduling {
 
@@ -89,6 +86,8 @@ public class Scheduling {
 
   public static void main(String[] args) {
     int i = 0;
+    args = new String[1];
+    args[0] = "src\\moss\\shed\\scheduling.conf";
 
     if (args.length != 1) {
       System.out.println("Usage: 'java Scheduling <INIT FILE>'");
